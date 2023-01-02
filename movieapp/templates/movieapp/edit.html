@@ -1,0 +1,15 @@
+{% extends 'movieapp/base.html' %}
+{% block body %}
+
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <div class="containezr">
+
+        {{form.as_p}}
+        <input type="submit">
+
+    </div>
+
+</form>
+
+{% endblock %}

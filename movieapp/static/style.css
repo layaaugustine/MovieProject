@@ -1,0 +1,22 @@
+body{
+background-color:aqua;
+}
+
+
+form{
+border:solid 2px red;
+width:30%;
+margin-left:30%;
+margin-top:5%;
+}
+.containerz{
+background-color:blue;
+width:auto;
+text-align: center;
+padding: 25px;
+}
+
+.sub{
+padding-left:100px ;
+}
+
