@@ -2,19 +2,22 @@
 
 {% block body %}
 
-<div class="containerz">
-    <div class="row">
+<div class="containerz" >
+    <div class="row" >
         {% for x in movie_list %}
         <div class="col-md-3">
 
-            <div class="card" style="width: 10rem;">
+            <div class="card shadow bg-white rounded" style="width:200px;height:300px;margin-top:3px;">
             <img src="{{x.image.url}}" class="card-img-top" alt="..." width="100px" height="100px">
             <div class="card-body">
+
             <h5 class="card-title">{{x.name}}</h5>
-<!--            <p class="card-text">{{x.desc}}</p>-->
-            <a href="{% url 'movieapp:detail_page' x.id %}" class="btn btn-primary">Go somewhere</a>
+            <!-- <p class="card-text">{{x.desc}}</p>-->
             </div>
+            <a href="{% url 'movieapp:detail_page' x.id %}" class="btn btn-primary" >Go somewhere</a>
+
             </div>
+
         </div>
         {% endfor %}
     </div>
